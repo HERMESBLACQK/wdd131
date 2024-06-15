@@ -74,8 +74,7 @@ main {
 
 .card {
           border: 1px solid var(--primary-color);
-          border-top-right-radius: 8px;
-          border-top-left-radius: 8px;
+          border-radius: 8px;
           padding: 0;
 }
 .card h3{
@@ -101,7 +100,6 @@ main {
           width: 75%;
 }
 .line{
-          border: 2px solid red;
           padding: 5px;
           text-align: center;
 }
@@ -113,6 +111,28 @@ main {
 hr{
           width: 70%;
           margin: auto;
+}
+.card-body{
+          margin: auto;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          height: 80%;
+}
+.card-body ul{
+          margin: auto;
+}
+.card-body ul li{
+          margin: 10px 0;
+}
+
+footer{
+          padding: 10px;
+          background-color: var(--primary-background);
+          text-align: center;
+}
+footer p{
+          margin: 5px 0;
 }
 
 
