@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-          --primary-color: #ec58a2; /* Example color */
-          --text-color: #333333; /* Example color */
+          --primary-color: #ec58a2;
+          /* Example color */
+          --text-color: #333333;
+          /* Example color */
           --text-color-secondary: #ffff;
-          --primary-background: #364ceb; /* Example color */
-      }
-      
+          --primary-background: #364ceb;
+          /* Example color */
+}
+
 
 * {
           padding: 0;
@@ -20,37 +23,80 @@ body {
           font-style: normal;
 
 }
-header{
+
+header {
           padding: 0;
 }
-h1{
+
+h1 {
           text-align: center;
           padding: 10px;
           background-color: var(--primary-background);
           color: var(--text-color-secondary);
 }
-nav{
+
+nav {
           padding: 5px;
           background-color: var(--primary-color);
 }
-nav ul{
+
+nav ul {
           display: flex;
           justify-content: space-around;
           padding: 8px;
 }
-nav ul li{
+
+nav ul li {
           list-style: none;
-         
-          
+
+
 }
-nav ul li a{
+
+nav ul li a {
           text-decoration: none;
           padding: 5px;
           border: none;
           color: var(--text-color);
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
           background-color: var(--text-color-secondary);
           border-radius: 5px;
           transition: .5s ease-in-out;
 }
+
+main {
+          display: grid;
+          grid-template-columns: 70% 28%;
+          gap: 2%;
+          margin: 20px;
+}
+
+.card {
+          border: 1px solid var(--primary-color);
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+          padding: 0;
+}
+.card h3{
+          padding: 10px;
+          background-color: var(--primary-color);
+          text-align: center;
+          border: 1px solid var(--primary-color);
+          border-top-right-radius: 8px;
+          border-top-left-radius: 8px;
+          color: var(--text-color-secondary);
+}
+.card-head{
+          display: flex;
+          padding: 5px;
+          margin: 15px ;
+}
+.card-head img{
+          width: 20%;
+}
+.card-head p{
+          font-size: 24px;
+          text-justify: auto;
+}
+
