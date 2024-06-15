@@ -90,13 +90,31 @@ main {
 .card-head{
           display: flex;
           padding: 5px;
-          margin: 15px ;
+          margin: 20px 10px ;
+          justify-content: space-between;
 }
 .card-head img{
           width: 20%;
 }
 .card-head p{
-          font-size: 24px;
-          text-justify: auto;
+          font-size: 22px;
+          width: 75%;
 }
+.line{
+          border: 2px solid red;
+          padding: 5px;
+          text-align: center;
+}
+.line p{
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 5px;
+}
+hr{
+          width: 70%;
+          margin: auto;
+}
+
+
+
 
