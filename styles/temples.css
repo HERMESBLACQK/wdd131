@@ -88,6 +88,14 @@ main{
           width: 100%;
       }
 
+      footer{
+          padding: 10px;
+          background-color: var(--primary-background);
+          text-align: center;
+}
+footer p{
+          margin: 5px 0;
+}
 
 
 
