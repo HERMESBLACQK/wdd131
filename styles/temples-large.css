@@ -1,0 +1,87 @@
+
+:root {
+          --primary-color: #ec58a2;
+          --text-color: #ffff;
+          --text-color-secondary: #333333;
+          --primary-background: #364ceb;
+      }
+      
+      * {
+          padding: 0;
+          margin: 0;
+      }
+      
+      body {
+          box-sizing: border-box;
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+          padding: 0;
+      }
+      
+      header {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          background-color: var(--primary-color);
+          align-items: center;
+      }
+      
+      h1 {
+          padding: 5px;
+          color: var(--text-color);
+      }
+      
+      nav {
+          padding: 5px;
+          width: 60%;
+      }
+      
+      nav ul {
+          display: flex;
+          justify-content: space-around;
+          padding: 8px;
+      }
+      
+      nav ul li {
+          list-style: none;
+      }
+      
+      nav ul li a {
+          text-decoration: none;
+          padding: 5px;
+          border: none;
+          color: var(--text-color);
+          font-size: 20px;
+      }
+      
+      nav ul li a:hover {
+          background-color: var(--text-color-secondary);
+          border-radius: 5px;
+          transition: .5s ease-in-out;
+      }
+      
+      main {
+          text-align: center;
+          padding: 10px;
+          margin: 10px auto;
+      }
+      
+      .temples {
+          padding: 10px 5px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 10px;
+          width: 80%;
+          margin: 20px auto;
+      }
+      
+      .temple-img {
+          height: 200px;
+          margin: 10px 0;
+      }
+      
+      .temple-img img {
+          height: 180px;
+          width: 100%;
+      }
