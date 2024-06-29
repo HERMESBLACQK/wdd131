@@ -1,0 +1,19 @@
+:root {
+          --primary-color: #ec58a2;
+          --text-color: #ffff;
+          --text-color-secondary: #333333;
+          --primary-background: #364ceb;
+      }
+      
+*{
+          padding: 0;
+          margin: 0;
+}
+body{
+          box-sizing: border-box;
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-style: normal;
+          padding: 0;
+          margin: 0;
+}
