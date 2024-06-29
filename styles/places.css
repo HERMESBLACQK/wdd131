@@ -17,3 +17,78 @@ body{
           padding: 0;
           margin: 0;
 }
+header {
+         
+          padding: 15px;
+          background-color: var(--primary-color);
+        
+      }
+      
+      h1 {
+          text-align: center;
+          padding: 5px;
+          color: var(--text-color);
+      }
+
+.hero{
+          background-image: url(/images/6-lions.webp);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100%;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+}
+.data, .weather{
+          padding: 10px;
+          width: 30%;
+          background-color: var(--text-color);
+}
+h2{
+          padding: 10px 30px;
+          background-color: var(--primary-background);
+          margin-left: -15px;
+          width: 60%;
+          color: white;
+}
+.data p{
+          border: 2px solid red;
+          margin: 5px;
+          text-align: center;
+          font-weight: bold;
+          font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      footer {
+          padding: 10px;
+          background-color: var(--primary-background);
+          text-align: center;
+      }
+      
+      footer p {
+          margin: 5px 0;
+      }
+
+
+
+
