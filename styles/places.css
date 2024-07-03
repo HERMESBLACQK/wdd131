@@ -52,13 +52,7 @@
   }
   
   h2 {
-    padding: 10px 30px;
-    background-color: var(--primary-background);
-    margin-left: -15px;
-    width: 60%;
-    color: white;
-    opacity: 0.999;
-    margin-bottom: 20px;
+  
   }
   
   .data p {
@@ -83,6 +77,29 @@
   .weather span, .data span{
     font-weight: normal;
   }
+  .data-head{
+    padding: 10px 30px;
+    background-color: var(--primary-background);
+    margin-left: -15px;
+    width: 60%;
+    color: white;
+    opacity: 0.999;
+    margin-bottom: 20px;
+  }
+  .weather-head{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: var(--primary-background);
+    margin-left: -15px;
+    width: 60%;
+    color: white;
+    opacity: 0.999;
+    margin-bottom: 20px;
+  }
+  .weather-head img{
+    width: 50px;
+  }
   footer {
     padding: 10px;
     background-color: var(--primary-background);
@@ -105,7 +122,8 @@
       position: unset;
       width: 100%;
     }
-    h2 {
+    .weather-head, .data-head {
+      display: block;
       padding: 10px 30px;
       background-color: transparent;
       color: black;
