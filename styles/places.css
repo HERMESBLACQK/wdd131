@@ -1,64 +1,131 @@
+
 :root {
-          --primary-color: #ec58a2;
-          --text-color: #ffff;
-          --text-color-secondary: #333333;
-          --primary-background: #364ceb;
-      }
-      
-*{
-          padding: 0;
-          margin: 0;
+  --primary-color: #ec58a2;
+  --text-color: #ffff;
+  --text-color-secondary: #333333;
+  --primary-background: #364ceb;
 }
-body{
-          box-sizing: border-box;
-          font-family: "Montserrat", sans-serif;
-          font-optical-sizing: auto;
-          font-style: normal;
-          padding: 0;
-          margin: 0;
-}
-header {
-         
-          padding: 15px;
-          background-color: var(--primary-color);
-        
-      }
-      
-      h1 {
-          text-align: center;
-          padding: 5px;
-          color: var(--text-color);
-      }
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-bottom: 8px solid var(--primary-background);
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 5px;
+    color: var(--text-color);
+  }
+  
+  .hero {
+    background-image: url(/images/nigeria-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh; /* Use vh unit instead of % */
+    padding: 20px;
+  }
+  
+  .data, .weather {
+    padding: 10px;
+    width: 25%;
+    background-color: var(--text-color);
+    opacity: 0.8;
+    height: 50%;
+  }
+  .data{
+    position: absolute;
+    top: 17%;
+    left: 3%;
+  }
+  
+  h2 {
+    padding: 10px 30px;
+    background-color: var(--primary-background);
+    margin-left: -15px;
+    width: 60%;
+    color: white;
+    opacity: 0.999;
+    margin-bottom: 20px;
+  }
+  
+  .data p {
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .weather{
+    height: 30%;
+    position: absolute;
+    bottom: 15%;
+    right:3%;
 
-.hero{
-          background-image: url(/images/6-lions.webp);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 100%;
-          padding: 10px;
-          display: flex;
-          justify-content: space-between;
-}
-.data, .weather{
-          padding: 10px;
-          width: 30%;
-          background-color: var(--text-color);
-}
-h2{
-          padding: 10px 30px;
-          background-color: var(--primary-background);
-          margin-left: -15px;
-          width: 60%;
-          color: white;
-}
-.data p{
-          border: 2px solid red;
-          margin: 5px;
-          text-align: center;
-          font-weight: bold;
-          font-size: 14px;
-}
+  }
+  .weather p{
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .weather span, .data span{
+    font-weight: normal;
+  }
+  footer {
+    padding: 10px;
+    background-color: var(--primary-background);
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 5px 0 15px 0;
+    color: white;
+  }
+
+
+
+
+  @media only screen and (max-width: 1024px) {
+    /* Styles for medium screen */
+
+  }
+  @media only screen and (max-width: 768px) {
+    /* Styles for small screen */
+    .data, .weather{
+      display: block;
+      position: unset;
+      width: 100%;
+    }
+    h2 {
+      padding: 10px 30px;
+      background-color: transparent;
+      color: black;
+      opacity: 0.999;
+      margin-bottom: 20px;
+      margin: 0;
+      width: 80%;
+      text-align: center;
+    }
+    .hero{
+      border-bottom: 6px solid var(--primary-color);
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    /* Styles for extra small screen */
+
+  }
 
 
 
@@ -79,15 +146,14 @@ h2{
 
 
 
-      footer {
-          padding: 10px;
-          background-color: var(--primary-background);
-          text-align: center;
-      }
-      
-      footer p {
-          margin: 5px 0;
-      }
+
+
+
+
+
+
+
+
 
 
 
