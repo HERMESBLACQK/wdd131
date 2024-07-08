@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --primary-color: #ec58a2;
   --text-color: #ffff;
@@ -30,7 +30,7 @@
   }
   
   .hero {
-    /* background-image: url(/images/nigeria-image.webp); */
+    background-image: url(/images/nigeria-image.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
