@@ -106,6 +106,7 @@ body {
       .features input[type="checkbox"]:checked + label:before {
           content: "☑";
           color: #333;
+          background-color: #fff;
       }
       
       input[type="submit"] {
