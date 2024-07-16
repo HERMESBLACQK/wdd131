@@ -3,7 +3,7 @@
   --primary-color: #ec58a2;
   --text-color: #ffff;
   --text-color-secondary: #333333;
-  --primary-background: #364ceb;
+  --primary-background: purple;
   --primary-background-main: #a181ae;
 }
 *{
@@ -109,8 +109,8 @@ body {
       }
       
       input[type="submit"] {
-          background-color: #4CAF50;
-          color: #fff;
+          background-color: #ccc;
+          color: black;
           padding: 10px 20px;
           border: none;
           border-radius: 5px;
@@ -164,4 +164,27 @@ footer {
   footer p {
     margin: 5px 0 15px 0;
     color: white;
+  }
+  @media only screen and (max-width: 768px){
+    header{
+        font-size: 14px;
+    }
+    main{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    select, input, textarea{
+        width: 100%;
+    }
+    .popup-content {
+        width: 90%;
+        margin: 40px auto;
+        left: 5%;  
+        top: 20%;
+    }
+    .popup-content p{
+        margin: 10px 0;
+    }
+
+
   }
