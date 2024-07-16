@@ -46,29 +46,39 @@
             </div>
 
             <div class="form-group">
-                <label for="useful-features">Useful Features:</label>
+                <label for="useful-features">Which Features did you find useful in the products <span>(check all that apply)</span></label>
                 <div class="features">
                     <input type="checkbox" id="feature-1" name="useful-features" value="feature-1">
-                    <label for="feature-1">Feature 1</label>
+                    <label for="feature-1">Durability </label>
                     <input type="checkbox" id="feature-2" name="useful-features" value="feature-2">
-                    <label for="feature-2">Feature 2</label>
+                    <label for="feature-2">Ease of use </label>
                     <input type="checkbox" id="feature-3" name="useful-features" value="feature-3">
-                    <label for="feature-3">Feature 3</label>
+                    <label for="feature-3">Performance</label>
+                    <input type="checkbox" id="feature-4" name="useful-features" value="feature-4">
+                    <label for="feature-4">Design</label>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="written-review">Written Review:</label>
+                <label for="written-review">Written Review: <span>(Optional)</span></label>
                 <textarea id="written-review" name="written-review"></textarea>
             </div>
 
             <div class="form-group">
-                <label for="user-name">User Name:</label>
+                <label for="user-name">Your Name:  <span>(Optional)</span></label>
                 <input type="text" id="user-name" name="user-name">
             </div>
 
             <input type="submit" value="Submit Review">
         </form>
+        <div id="review-popup" class="popup">
+            <div class="popup-content">
+                <h2>Review Submission Confirmation</h2>
+                <p>Thank you for submitting your review!</p>
+                <p>You have submitted a total of <span id="review-count"></span> reviews.</p>
+                <button id="close-popup">Close</button>
+            </div>
+        </div>
     </main>
     <footer>
         <p> &copy; <span id="currentYear"></span> Omotoso Taiwo Henry Nigeria</p>
