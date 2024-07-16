@@ -59,7 +59,9 @@ body {
           border: 1px solid #ccc;
           outline: none;
       }
-      
+       .popup-content p{
+        margin: 15px 0;
+    }
       .rating {
           display: flex;
           justify-content: space-between;
@@ -119,7 +121,7 @@ body {
       }
       
       input[type="submit"]:hover {
-          background-color: #3e8e41;
+          background-color: gray;
       }
       /* add styles for popup */
 .popup {
