@@ -39,17 +39,20 @@ const reviewForm = document.getElementById('review-form');
 const reviewPopup = document.getElementById('review-popup');
 const reviewCountElement = document.getElementById('review-count');
 const closePopupButton = document.getElementById('close-popup');
+const thankYouMessage = document.getElementById('thank-you-message');
 
 reviewForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Increment review counter in localStorage
-    let reviewCount = localStorage.getItem('reviewCount');
-    if (!reviewCount) {
-        reviewCount = 0;
-    }
-    localStorage.setItem('reviewCount', parseInt(reviewCount) + 1);
-    reviewCountElement.textContent = parseInt(reviewCount) + 1;
-    reviewPopup.style.display = 'block';
+  e.preventDefault();
+  const userName = document.getElementById('user-name').value;
+  // Increment review counter in localStorage
+  let reviewCount = localStorage.getItem('reviewCount');
+  if (!reviewCount) {
+    reviewCount = 0;
+  }
+  localStorage.setItem('reviewCount', parseInt(reviewCount) + 1);
+  reviewCountElement.textContent = parseInt(reviewCount) + 1;
+  reviewPopup.style.display = 'block';
+  thankYouMessage.textContent = `Thank you, ${userName}, for submitting your review!`;
 });
 
 closePopupButton.addEventListener('click', () => {
