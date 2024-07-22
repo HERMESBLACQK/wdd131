@@ -1,0 +1,411 @@
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Site Plan</title>
+  <link type="text/css" rel="stylesheet" href="site-plan.css">
+</head>
+
+
+<style>
+  /* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+/* change the values below to your colors from your palette */
+--primary-color: #a82d49   ;
+--secondary-color: #43121d ;
+--accent1-color: #777;
+--accent2-color: white;
+
+/* change the values below to your chosen font(s) */
+--heading-font: "IM Fell French Canon SC";
+--paragraph-font: Lato, Helvetica, sans-serif;
+
+/* these colors below should be chosen from among your palette colors above */
+--headline-color-on-white: #2c3c47;  /* headlines on a white background */ 
+--headline-color-on-color: white; /* headlines on a colored background */ 
+--paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+--paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+--paragraph-background-color: #396E94  ;
+--nav-link-color: #396E94;
+--nav-background-color: #fdd868;
+--nav-hover-link-color: white;
+--nav-hover-background-color: #396E94;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+max-width: 1200px;
+margin: 0 auto;
+padding: 4em;
+font-size: 18px;
+text-align: center;
+}
+img {
+display: block;
+margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: var(--heading-font);
+color: var(--headline-color-on-white);
+}
+h2 {
+text-align: center;
+}
+hr {
+height: 3px;
+margin: 35px 0;
+background: var(--accent1-color);
+}
+header {
+padding: 1em;
+text-align: center;
+color: var(--headline-color-on-color);
+background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+color: var(--headline-color-on-color);
+}
+
+p {
+font-family: var(--paragraph-font);
+color: var(--paragraph-color-on-color);
+padding: 1em;
+}
+.colors {
+width: 100%;
+min-width: 350px;
+margin: 30px auto;
+text-align: center;
+}
+.colors th {
+background-color: #999;
+}
+.colors td{
+width: 25%;
+height: 3em;
+}
+
+.primary {
+background-color: var(--primary-color);
+}
+.secondary {
+background-color: var(--secondary-color);
+}
+.accent1 {
+background-color: var(--accent1-color);
+}
+.accent2{
+background-color: var(--accent2-color);
+}
+
+p.colored {
+background-color: var(--paragraph-background-color);
+color: var(--paragraph-color-on-color);
+}
+
+nav {
+background-color: var(--nav-background-color);
+line-height: 3em;
+text-align: center;
+font-size: 1.2em;
+}
+nav  {
+list-style-type: none;
+display: flex;
+
+}
+nav a {
+padding:1em;
+min-width: 120px;
+text-decoration: none;
+padding: 10px;
+
+}
+nav a:link, nav a:visited {
+color: var(--nav-link-color);
+}
+nav a:hover {
+color: var(--nav-hover-link-color);
+background-color: var(--nav-hover-background-color);
+}
+/* .logo {
+  width: 150px;
+  height: 150px;
+} */
+.sitemap {
+display: grid;
+justify-content: center;
+
+grid-template-columns: repeat(6, 15%);
+grid-template-rows: 3em 1.5em 1.5em 3em;
+grid-template-areas: ". . home home . ."
+". . . top . ."
+". left left right right ."
+"page2 page2 . . page3 page3";
+}
+.sitemap > div {
+
+text-align: center;
+
+}
+.sm-home {
+grid-area: home;
+background-color: #ccc;
+line-height: 3em;
+}
+.sm-page2 {
+grid-area: page2;
+background-color: #ccc;
+line-height: 3em;
+}
+.sm-page3 {
+grid-area: page3;
+background-color: #ccc;
+line-height: 3em;
+}
+
+.top {
+grid-area: top;
+border-left: 1px solid;
+}
+
+.left {
+grid-area: left;
+border-top: 1px solid;
+border-left: 1px solid;
+}
+
+.right {
+grid-area: right;
+border-top: 1px solid;
+border-right: 1px solid;
+}
+</style>
+<body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+  <header>
+    <h1>FoodiePlug Site Plan</h1>
+    <h2>Taiwo Omotoso</h2>
+    <h2>WDD 130</h2>
+    <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 130.03 -->
+  </header>
+  <main>
+
+    <!-- ------------------------Steps 2-3------------------------------ -->
+    <hr>
+    <h2>Online Restaurant</h2>
+    <h3>Food Sales</h3>
+    <p class="colored"> 
+
+    </p>  <!-- change this -->
+
+
+    <h3>Audience</h3>
+    <p class="colored">[People who want to order food]</p>  <!-- change this -->
+
+    <hr>
+    <h2>Branding</h2>
+    <h3>Website Logo</h3>
+    <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+    <img src="images/logo-image.png" class="logo" alt="Logo images">
+    <hr>
+    <h2>
+      Style Guide
+    </h2>
+
+    <!-- ------------------------Steps 4-8------------------------------ -->
+
+    <h3>
+      Color Palette
+    </h3>
+    <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+    <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+    Palette URL: <a href="https://coolors.co/a82d49-43121d-a43312-777777-ffffff" target="_blank">https://coolors.co/a82d49-43121d-a43312-777777-ffffff</a>
+
+
+    <table class="colors">
+      <tbody><tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th></tr>
+      <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+      <tr><td class="primary">[#a82d49]</td><td class="secondary">[#43121d]</td><td class="accent1">[#777]</td><td class="accent2">[#ffff]</td></tr>
+    </tbody></table>
+
+    <!-- ------------------------Step 9------------------------------ -->
+
+    <h3>
+      Typography
+    </h3>
+    <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+    <h4>
+      Heading Font: [Lato]  <!-- change this -->
+    </h4>
+    <h4>
+      Paragraph Font: [Lato]  <!-- change this -->
+    </h4>
+    <h3>
+      Normal paragraph example
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <h3>
+      Colored paragraph example
+    </h3>
+    <p class="colored">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    </p>
+
+    <!-- ------------------------Step 10------------------------------ -->
+
+    <h3>
+      Navigation
+    </h3>
+    <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. --> 
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./order.html">Order</a>
+      <a href="./cart.html">Cart</a>
+    </nav>
+    <hr>
+    <h2>
+      Site Map
+    </h2>
+    <div class="sitemap">
+      <div class="sm-home">
+        Home
+      </div>
+      <div class="sm-page2">
+        Order<!-- change this -->
+      </div>
+      <div class="sm-page3">
+        Cart  <!-- change this -->
+      </div>
+
+      <div class="top">
+        &nbsp;
+      </div>
+      <div class="left">
+        &nbsp;
+      </div>
+      <div class="right">
+        &nbsp;
+      </div>
+
+    </div>
+
+    <!-- --------Content Section -------------- -->
+    <hr>
+    <h2>
+      Content
+    </h2>
+    <h3>Home page</h3>
+    <p class="colored">Embracing Culinary Delights: The FoodiePlug Experience
+
+      In the digital era, the culinary landscape has been revolutionized by the emergence of online food restaurant websites, and at the forefront of this culinary renaissance is FoodiePlug. Our platform is not just a website; it's a gateway to a world of flavors, convenience, and culinary exploration.
+      
+      Unparalleled Convenience:
+      FoodiePlug brings unparalleled convenience to your fingertips. Say goodbye to long waits and complicated reservations. With just a few clicks or taps, you can embark on a gastronomic journey without leaving the comfort of your home. Whether you're a busy professional or just seeking a cozy night in, FoodiePlug ensures that your favorite meals are just a click away.
+      
+      A World of Variety:
+      Dive into a world of culinary diversity with FoodiePlug. Our platform connects you with an extensive array of restaurants, from local hidden gems to renowned international chains. Explore cuisines from around the globe, savoring flavors that cater to every palate. FoodiePlug not only satisfies your cravings but also introduces you to culinary gems you might have missed.
+      
+      Transparency and Empowerment:
+      At FoodiePlug, we believe in empowering our users. Transparency is at the core of our platform, allowing you to access detailed menus, authentic reviews, and ratings before making your choice. We want you to make informed decisions, ensuring that every meal you order is a delightful experience. Your culinary journey is in your hands.
+      
+      Efficiency through Technology:
+      Our user-friendly website and mobile application are designed to provide a seamless experience. Navigate effortlessly, receive personalized recommendations, and enjoy secure payment options. Real-time tracking systems keep you informed about your order's status, instilling confidence in the entire process. FoodiePlug harnesses technology to make your dining experience efficient and stress-free.
+      
+      Innovations in Culinary Exploration:
+      FoodiePlug doesn’t just offer meals; it fosters culinary innovation. Embrace the concept of virtual kitchens, where unique, delivery-only experiences come to life. These kitchens, exclusive to FoodiePlug, cater to specific culinary niches, introducing you to flavors that go beyond the ordinary. The FoodiePlug experience is a journey of constant culinary discovery.
+      
+      As we celebrate the joy of good food, FoodiePlug is committed to addressing industry challenges. Quality assurance, environmental impact, and fair labor practices are at the forefront of our mission to provide you with not only delicious but also ethical dining experiences.
+      
+      In conclusion, FoodiePlug is not just a website; it's your companion in culinary exploration. Join us on a journey where convenience meets variety, transparency empowers choice, and technology enhances efficiency. FoodiePlug: Your doorway to a world of culinary delights.</p>  <!-- change this -->
+
+
+    <p>Images for the Home page</p>
+      <img src="images/explore1.jpg" alt="image for homepage">
+      <img src="images/cta.jpg" alt="image for homepage">
+
+    
+    <h3>Order</h3>
+    <p>
+      <h3>Order Your Favorite Dishes</h3>
+<p class="colored">
+    Welcome to the heart of FoodiePlug, where your culinary desires come to life! Browse through our extensive menu and treat yourself to a delightful dining experience. Ordering with us is simple and convenient. Follow the steps below to savor the flavors you crave:
+
+    <ol>
+        <li><strong>Browse the Menu:</strong> Explore a diverse range of cuisines and dishes. From mouth-watering appetizers to indulgent desserts, we have something for every palate.</li>
+        <li><strong>Select Your Items:</strong> Click on your desired items to add them to your virtual cart. Don't forget to customize your order with any special preferences or dietary requirements.</li>
+        <li><strong>Review Your Cart:</strong> Before proceeding to cart, take a moment to review your selections. Make sure everything looks perfect.</li>
+        <li><strong>Proceed to Cart:</strong> Once you're satisfied with your cart, click on the cart button. You'll be guided through a simple and secure payment process.</li>
+        <li><strong>Delivery Details:</strong> Provide your delivery address and any specific instructions to ensure a smooth delivery process.</li>
+        <li><strong>Place Your Order:</strong> Confirm your order, and voilà! Your delicious meal is on its way to your doorstep.</li>
+    </ol>
+
+    At FoodiePlug, we prioritize efficiency and transparency in every step of the ordering process. Sit back, relax, and let us bring the culinary wonders to you.
+
+    Thank you for choosing FoodiePlug. Bon appétit!
+</p>
+
+    </p>
+    <p>Images For Order</p>
+      <img src="images/explore2.jpg" alt="image for page">
+      <img src="images/explore3.jpg" alt="image for page">
+
+    
+    <h3>Cart</h3>
+    <p>
+      <h3>Your Shopping Cart</h3>
+<p class="colored">
+    Your culinary journey is just a few steps away from becoming a reality! The shopping cart is where the magic happens—where your selected dishes come together before delighting your taste buds. Let's guide you through the process:
+
+    <ol>
+        <li><strong>Review Your Selections:</strong> Your cart is a reflection of your culinary desires. Take a moment to review each item, ensuring it aligns with your cravings. Check for any special instructions or modifications you've added to customize your order.</li>
+        <li><strong>Quantity and Modifications:</strong> Adjust the quantity of each item in your cart to match your appetite. Have specific preferences or dietary requirements? No worries! Easily modify items right from your cart to suit your taste.</li>
+        <li><strong>Total Price:</strong> The total price of your order, including any taxes or fees, is clearly displayed. We believe in transparent pricing, so you know exactly what you're getting.</li>
+        <li><strong>Special Offers:</strong> Keep an eye out for any special offers, discounts, or promotions that may apply to your order. We love surprising our customers with great deals!</li>
+        <li><strong>Delivery Information:</strong> Provide your delivery address and any specific delivery instructions. Our goal is to ensure your order reaches you exactly as you expect it.</li>
+    </ol>
+
+    At FoodiePlug, we believe that the journey to a fantastic meal should be as enjoyable as the meal itself. Thank you for choosing us to be a part of your culinary experience!
+</p>
+
+    </p>
+    <p>Images For Cart</p>
+      <img src="images/images3.jpeg" alt="image for page3">
+      <img src="images/cta.jpg" alt="image for page3">
+
+    
+    <hr>
+    <h2>
+      Wireframes
+    </h2>
+    <p>
+      Create three wireframes for your site. One for each page and list them here</p>
+
+    <h3>Home</h3>
+    <p>         
+      [Any additional details about home that the wireframe does not make clear]
+    </p>
+    <img src="images/1-Homepage.png" alt="home page wireframe">
+
+    <h3>Order</h3>
+    <p>         
+      [Any additional details about Order that the wireframe does not make clear]
+    </p>
+    <img src="images/2-orderpage.png" alt="page 2 wireframe">
+
+    <h3>Cart</h3>
+    <p>         
+      [Any additional details about Cart that the wireframe does not make clear]
+    </p>
+    <img src="images/3-Cart.png" alt="page 3 wireframe">
+  </main>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
