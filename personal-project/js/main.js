@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
               const orderButton = document.createElement('button');
               orderButton.classList.add('btn-1', 'btn-red');
-              orderButton.textContent = 'Order Now';
+              orderButton.textContent = 'Review Now';
       
               foodCardText.appendChild(foodTitle);
               foodCardText.appendChild(foodTime);
