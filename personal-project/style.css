@@ -185,13 +185,12 @@ li a:hover{
           margin: 0 auto;
           padding: 30px 0;
         }
-.exlplore-foodscontainer{
-          /* border: 3px solid tomato; */
-          padding: 15px 0;
-          display: flex;
-          justify-content: space-evenly;
-          flex-wrap: wrap;
-        }
+        .explore-foodscontainer {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 1rem;
+          justify-content: center;
+      }
         .explore-foodscard{
         width: 20%;
         min-width: 250px;
@@ -427,6 +426,7 @@ li a:hover{
             font-size: 1.6rem;
             width: 100%;
   }
+  
   .aboutus-banner{
     text-align: center;
     display: flex;
@@ -460,6 +460,9 @@ li a:hover{
     border: 2px solid var(--white-color);
     animation: ripple 2s  infinite ;
     margin-top: 30px;
+  }
+  .footer-content{
+    margin: 10px 0;
   }
       }
       
