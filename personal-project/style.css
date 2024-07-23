@@ -38,6 +38,9 @@
 body{
           background-color: var(--body-background);
           font-family: 'Lato', sans-serif;
+          padding: 0;
+          margin: 0;
+          border: 2px solid blue;
 }
 .btn-1{
           padding: 15px 20px;
@@ -69,6 +72,7 @@ header{
           display: flex;
           justify-content: space-between;
           background-color: var(--main-color);
+          position: sticky;
 }
 nav{
           padding: 1rem;
@@ -107,6 +111,55 @@ li a:hover{
 .logo img{
           width: 40%;
 }
+.hamburger {
+  display: none;
+  height: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+.line {
+  width: 30px;
+  background-color: white;
+  height: 3px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.line::before,
+.line::after {
+  content: '';
+  width: 30px;
+  background-color: white;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.line::before {
+  top: -10px;
+}
+
+.line::after {
+  top: 10px;
+}
+
+.hamburger.active .line {
+  background-color: transparent;
+}
+
+.hamburger.active .line::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.active .line::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
 #banner{
           background-image: url(./images/banner.jpg);
           height: 70vh;
@@ -128,10 +181,8 @@ li a:hover{
           color: var(--main-color);
 }
 .explore-foods{
-          /* border: 3px solid black; */
           width: 90%;
           margin: 0 auto;
-          /* border-bottom: 50px solid var(--main-color); */
           padding: 30px 0;
         }
 .exlplore-foodscontainer{
@@ -219,7 +270,7 @@ li a:hover{
           border: 2px solid var(--white-color);
           animation: ripple 2s  infinite ;
           margin-top: 30px;
-        
+          margin-bottom: 10px;
         }
         .right-div{
           width: 40%;
@@ -242,9 +293,63 @@ li a:hover{
         .cart{
           width: 80%;
           margin: 0 auto;
-          padding: 30px 50px;
+          padding: 30px 10px;
         }
+     
+    .cart-card{
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+      align-items: center;
 
+    }
+    .explore-foodscard-img img{
+          width: 70%;
+          height: 100%;
+          object-fit: cover;
+        }
+      
+        .food-cardtittle{
+          font-weight: bolder;
+          font-size: 1.8rem;
+        }
+        .food-cardtime{
+          margin: 8px 0;
+          display: block;
+          font-size: 1.5rem;
+        }
+        .cart-left{
+          display: flex;
+          justify-content: space-between;
+        }
+        .price{
+          width: 30%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .total{
+          padding: 10px;
+          display: flex;
+          width: 80%;
+          margin: 0 auto;
+          justify-content: space-around;
+        }
+        h2{
+          font-size: 3rem;
+          text-align: center;
+          padding: 15px 5px;
+        }
+        h3{
+          font-size: 2rem;
+        }
+        .total-price p{
+          font-size: 1.5rem;
+        }
+        .exlplore-foodscontainer{
+          padding: 10px 20px;
+        }
         footer{
           background: var(--main-color);
           padding: 20px 0;
@@ -287,6 +392,77 @@ li a:hover{
           text-align: center;
           color: var(--white-color);
         }
+        @media (max-width: 768px) {
+          nav {
+              display: none;
+          }
+      
+          .hamburger {
+              display: block;
+          }
+      
+          nav.active {
+              width: 100%;
+              display: block;
+          }
+      
+          nav ul {
+              display: block;
+              margin: auto;
+              text-align: center;
+          }
+      
+          nav ul li {
+              padding: 10px;
+              font-size: 28px;
+              font-weight: bold;
+          }
+      
+     
+          footer{
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          #banner p{ 
+            font-size: 1.6rem;
+            width: 100%;
+  }
+  .aboutus-banner{
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+    
+  }
+  .right-div{
+    width: 100%;
+  }
+  .aboutus-banner h2{
+    color: var(--main-color);
+    font-size: 2rem;
+    
+  }
+
+  .aboutus-banner p{
+    margin: 20px 0;
+    font-size: 1.5rem;
+    
+  }
+  .aboutus-banner button{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    color: var(--white-color);
+    background: var(--main-color);
+    border: 2px solid var(--white-color);
+    animation: ripple 2s  infinite ;
+    margin-top: 30px;
+  }
+      }
+      
         
       
 
