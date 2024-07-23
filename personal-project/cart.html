@@ -7,70 +7,33 @@
   <meta name="author" content="Omotoso Taiwo Henry">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./fontsawesome/css/all.css">
-  <script src="main.js" defer></script>
-          <title>Order</title>
+  <script src="main.js"></script>
+  <title>Order</title>
+
 </head>
 <body>
-  <style>
-   
-  </style>
-
-          <header>
-                    <div class="logo">
-          <img src="./images/logo-image.png" alt="">
-                    </div>
-                    <nav>
-                              <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="order.html">Order</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                              </ul>
-                    </nav>
-                    <div class="hamburger" id="hamburger">
-                      <div class="line"></div>
-                  </div>
-          </header>
-
-          <div class="cart">
-            <div class="heading">
-              <h2>This is the list of what you have ordered</h2>
-            </div>
-            <div class="cart-left">
-              <div class="explore-foodscard cart-card">
-                <div class="explore-foodscard-img">
-                          <img src="./images/explore3.jpg" alt="">
-                </div>    
-                <div class="explore-foodscard-text">
-                          <span class="food-cardtittle">Rainbow Vegetable Sandwich</span>
-                          <span class="food-cardtime">Time: 15 - 20 Minutes | Serves: 1</span>
-                         
-                </div>
-      </div>
-      <div class="price">
-        <p  class="food-cardprice">$10.50  <span>$11.70</span></p>
-      </div>
-
+  <header>
+    <div class="logo">
+      <img src="./images/logo-image.png" alt="">
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a id="review-nav" href="#">Reviews</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+    </div>
+  </header>
 
-    <div class="cart-left">
-
-      <div class="explore-foodscard cart-card" >
-        <div class="explore-foodscard-img">
-          <img src="./images/explore2.jpg" alt="">
-        </div>    
-        <div class="explore-foodscard-text">
-          <span class="food-cardtittle">Rainbow Vegetable Sandwich</span>
-          <span class="food-cardtime">Time: 15 - 20 Minutes | Serves: 1</span>
-          
-        </div>
-        
-      </div>
-      <div class="price">
-        <p  class="food-cardprice">$10.50  <span>$11.70</span></p>
-      </div>
+  <div class="cart">
+    <div class="heading">
+      <h2>This is the list of what you have ordered</h2>
     </div>
     <div class="cart-left">
-
       <div class="explore-foodscard cart-card">
         <div class="explore-foodscard-img">
           <img src="./images/explore3.jpg" alt="">
@@ -78,63 +41,91 @@
         <div class="explore-foodscard-text">
           <span class="food-cardtittle">Rainbow Vegetable Sandwich</span>
           <span class="food-cardtime">Time: 15 - 20 Minutes | Serves: 1</span>
-          
+          <button class="btn-1 btn-red" data-action="form">Review</button>
         </div>
       </div>
       <div class="price">
-        <p  class="food-cardprice">$10.50  <span>$11.70</span></p>
+        <p class="food-cardprice">$10.50 <span>$11.70</span></p>
       </div>
     </div>
-  
-           
-            
-            
-           
-            
-          </div>
-          <div class="total">
 
-            <div class="total-tag">
-              <h3>TOTAL</h3>
-            </div>
-            <div class="total-price">
-              <p>$31.50</p>
-            </div>
-          </div>
+    <div class="cart-left">
+      <div class="explore-foodscard cart-card">
+        <div class="explore-foodscard-img">
+          <img src="./images/explore2.jpg" alt="">
+        </div>    
+        <div class="explore-foodscard-text">
+          <span class="food-cardtittle">Rainbow Vegetable Sandwich</span>
+          <span class="food-cardtime">Time: 15 - 20 Minutes | Serves: 1</span>
+          <button class="btn-1 btn-red" data-action="form">Review</button>
+        </div>
+      </div>
+      <div class="price">
+        <p class="food-cardprice">$10.50 <span>$11.70</span></p>
+      </div>
+    </div>
+    <div class="cart-left">
+      <div class="explore-foodscard cart-card">
+        <div class="explore-foodscard-img">
+          <img src="./images/explore3.jpg" alt="">
+        </div>    
+        <div class="explore-foodscard-text">
+          <span class="food-cardtittle">Rainbow Vegetable Sandwich</span>
+          <span class="food-cardtime">Time: 15 - 20 Minutes | Serves: 1</span>
+          <button class="btn-1 btn-red" data-action="form">Review</button>
+        </div>
+      </div>
+      <div class="price">
+        <p class="food-cardprice">$10.50 <span>$11.70</span></p>
+      </div>
+    </div>
+  </div>
 
-          <section class="explore-foods">
-            <div class="explore-foodscontainer" id="food-container" data-limit="4">
-                <!-- Food cards will be injected here by JavaScript -->
-            </div>
-        </section>
+  <div class="total">
+    <div class="total-tag">
+      <h3>TOTAL</h3>
+    </div>
+    <div class="total-price">
+      <p>$31.50</p>
+    </div>
+  </div>
 
+  <section class="explore-foods">
+    <div class="explore-foodscontainer" id="food-container" data-limit="4">
+      <!-- Food cards will be injected here by JavaScript -->
+    </div>
+  </section>
 
+  <footer>
+    <div class="logo">
+      <img src="./images/logo-image.png" alt="">
+    </div>
+    <div class="footer-content">
+      <p>Address: 4 salt-lake avenue London</p><br>
+      <p>Email: FoodiePlug@gmail.com</p><br>
+      <p>&copy; 2022 FoodiePlug, built by Taiwo Omotoso</p>
+      <p><a href="site-plan.html">site-plan</a></p>
+    </div>
+    <div class="icon-holder">
+      <a href=""><span class="icons"><i class="fa-brands fa-linkedin-in"></i></span></a>
+      <a href=""><span class="icons"><i class="fa-brands fa-github"></i></span></a>
+      <a href=""><span class="icons"><i class="fa-brands fa-twitter"></i></span></a>
+      <a href=""><span class="icons"><i class="fa-brands fa-facebook"></i></span></a>
+    </div>
+  </footer>
 
-          <footer>
-                    <div class="logo">
-                              <img src="./images/logo-image.png" alt="">
-                                        </div>
-                                        <div class="footer-content">
-                                                  <p>
-                                                           Address: 4 salt-lake avenue London
-                                                      </p> <br>
-                                                  <p>
-                                                         Email: FoodiePlug@gmail.com
-                                                      </p> <br>
-                                                  <p>
-                                                            &copy;    2022 FoodiePlug, built by Taiwo Omotoso
-                                                      </p>
-                                                  <p>
-                                                           <a href="site-plan.html">site-plan</a>
-                                                      </p>
-                                        </div>
-                                        <div class="icon-holder">
-                                                 <a href=""><span class="icons"><i class="fa-brands fa-linkedin-in"></i></span></a> 
-                                                 <a href=""><span class="icons"><i class="fa-brands fa-github"></i></span></a> 
-                                                 <a href=""><span class="icons"><i class="fa-brands fa-twitter"></i></span></a> 
-                                                 <a href=""><span class="icons"><i class="fa-brands fa-facebook"></i></span></a> 
-                                        </div>
-          </footer>
-          
+  <!-- Popup Structure -->
+  <div id="review-popup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <section id="popup-section">
+        <!-- Content will be injected by JavaScript -->
+      </section>
+    </div>
+  </div>
+
+  <script>
+ 
+  </script>
 </body>
 </html>

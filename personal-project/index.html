@@ -11,21 +11,22 @@
     <title>FoodiePlug</title>
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img src="./images/logo-image.png" alt="Logo">
-    </div>
-    <nav>
-        <ul>
+    <header>
+        <div class="logo">
+          <img src="./images/logo-image.png" alt="">
+        </div>
+        <nav>
+          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="cart.html">Cart</a></li>
-        </ul>
-    </nav>
-    <div class="hamburger" id="hamburger">
-        <div class="line"></div>
-    </div>
-</header>
+            <li><a id="review-nav" href="#">Reviews</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+        </div>
+      </header>
 <main>
     <section id="banner">
         <h2>Do you know?</h2>
@@ -71,5 +72,14 @@
         <a href="#"><span class="icons"><i class="fa-brands fa-facebook"></i></span></a>
     </div>
 </footer>
+  <!-- Popup Structure -->
+  <div id="review-popup" class="popup">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <section id="popup-section">
+        <!-- Content will be injected by JavaScript -->
+      </section>
+    </div>
+  </div>
 </body>
 </html>
